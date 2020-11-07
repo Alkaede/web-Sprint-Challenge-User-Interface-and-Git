@@ -56,6 +56,33 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Navbar */
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 3%;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Image */
+#headerImg{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin:0px 0px 3vh 10vh;
+    width: 100%;
+}
+
+
+
+/* Body */
+
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
@@ -78,6 +105,20 @@ p {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
+
+.aboutTop{
+        display: flex;
+        flex-flow: wrap row;
+        border-bottom: 1px dashed black;
+        margin:  0 0 20px 20px;
+        width: 100%;
+}
+.aboutTop .hidden{
+    margin-top: 3px;
+    visibility: hidden;
+}
+
+
 
 .top-content .text-container {
     width: 48%;
@@ -125,6 +166,63 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/* boxes oh boyyyyyyyyy */
+div .boxes .box:nth-child(1){
+    background-color: teal;
+}
+div .boxes .box:nth-child(2){
+    background-color: gold;
+}
+div .boxes .box:nth-child(3){
+    background-color: cadetblue;
+}
+div .boxes .box:nth-child(4){
+    background-color: coral;
+}
+div .boxes .box:nth-child(5){
+    background-color: crimson;
+}
+div .boxes .box:nth-child(6){
+    background-color: forestgreen;
+}
+div .boxes .box:nth-child(7){
+    background-color: darkorchid;
+}
+div .boxes .box:nth-child(8){
+    background-color: hotpink;
+}
+div .boxes .box:nth-child(9){
+    background-color: indigo;
+}
+div .boxes .box:nth-child(10){
+    background-color: dodgerblue;
+}
+
+/* about page */
+
+.aboutSect{}
+
+
+div[class='container about-page']{
+    display: flex;
+    flex-flow: wrap row;
+    /* justify-content: space-around;
+    width: 45%;
+    padding: 20px; */
+}
+
+div .info-box{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* Footer */
 
 footer {
     width: 100%;
