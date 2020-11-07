@@ -118,8 +118,6 @@ p {
     visibility: hidden;
 }
 
-
-
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
@@ -226,7 +224,7 @@ div[class='container about-page']{
 
 div .info-box{
     display: flex; 
-    flex-basis: calc(50% - 40px);  /* trying out a grid to see if it works*/
+    flex-basis: calc(50% - 40px);  /* trying out a grid to see if it works so that content in these divs line up more properly in 2x2 box with their items*/
     justify-content: center;
     flex-direction: column;
     /* margin: 0 15px 15px 15px; */
