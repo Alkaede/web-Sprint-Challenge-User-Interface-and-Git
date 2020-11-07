@@ -75,8 +75,8 @@ nav a{
     display: flex;
     justify-content: center;
     align-content: center;
-    margin:0px 0px 3vh 10vh;
-    width: 100%;
+    margin:0px 0px 3vh 20vh;
+    width: 75%;
 }
 
 
@@ -167,7 +167,7 @@ p {
     padding-right: 0;
 }
 
-/* boxes oh boyyyyyyyyy */
+/* boxes oh boyyyyyyyyy                     could have probably done this better but for now leaving it the way I know how to do it */  
 div .boxes .box:nth-child(1){
     background-color: teal;
 }
@@ -201,25 +201,59 @@ div .boxes .box:nth-child(10){
 
 /* about page */
 
-.aboutSect{}
+.aboutSect{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.aboutTop{
+    width: 50%;
+    display: flex;
+    margin-left: 25%;
+}
 
 
 div[class='container about-page']{
-    display: flex;
-    flex-flow: wrap row;
-    /* justify-content: space-around;
+    /* flex-flow: wrap row; 
+    justify-content: space-around;
     width: 45%;
     padding: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 div .info-box{
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
+    display: flex; 
+    flex-basis: calc(50% - 40px);  /* trying out a grid to see if it works*/
+    justify-content: center;
+    flex-direction: column;
+    /* margin: 0 15px 15px 15px; */
+    padding: 10px;
+    border-bottom: 1px dashed black;
 }
 
+div .info-box .learn{
+    width: 30%;
+    border-radius: 5px;
+    padding: 5px;
+    background: white;
+    margin-bottom: 10px;
+}
 
+div .info-box h3{
+    padding-top: 10px;
+}
 
+div .info-box p{
+    padding-bottom: 10px;
+}
+
+div .ending{
+    margin: 30px 0;
+    padding: 20px;
+}
 
 
 /* Footer */
