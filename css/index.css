@@ -56,6 +56,33 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Navbar */
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 3%;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Image */
+#headerImg{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin:0px 0px 3vh 20vh;
+    width: 75%;
+}
+
+
+
+/* Body */
+
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
@@ -77,6 +104,18 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+.aboutTop{
+        display: flex;
+        flex-flow: wrap row;
+        border-bottom: 1px dashed black;
+        margin:  0 0 20px 20px;
+        width: 100%;
+}
+.aboutTop .hidden{
+    margin-top: 3px;
+    visibility: hidden;
 }
 
 .top-content .text-container {
@@ -125,6 +164,97 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/* boxes oh boyyyyyyyyy                     could have probably done this better but for now leaving it the way I know how to do it */  
+div .boxes .box:nth-child(1){
+    background-color: teal;
+}
+div .boxes .box:nth-child(2){
+    background-color: gold;
+}
+div .boxes .box:nth-child(3){
+    background-color: cadetblue;
+}
+div .boxes .box:nth-child(4){
+    background-color: coral;
+}
+div .boxes .box:nth-child(5){
+    background-color: crimson;
+}
+div .boxes .box:nth-child(6){
+    background-color: forestgreen;
+}
+div .boxes .box:nth-child(7){
+    background-color: darkorchid;
+}
+div .boxes .box:nth-child(8){
+    background-color: hotpink;
+}
+div .boxes .box:nth-child(9){
+    background-color: indigo;
+}
+div .boxes .box:nth-child(10){
+    background-color: dodgerblue;
+}
+
+/* about page */
+
+.aboutSect{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.aboutTop{
+    width: 50%;
+    display: flex;
+    margin-left: 25%;
+}
+
+
+div[class='container about-page']{
+    /* flex-flow: wrap row; 
+    justify-content: space-around;
+    width: 45%;
+    padding: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+div .info-box{
+    display: flex; 
+    flex-basis: calc(50% - 40px);  /* trying out a grid to see if it works so that content in these divs line up more properly in 2x2 box with their items*/
+    justify-content: center;
+    flex-direction: column;
+    /* margin: 0 15px 15px 15px; */
+    padding: 10px;
+    border-bottom: 1px dashed black;
+}
+
+div .info-box .learn{
+    width: 30%;
+    border-radius: 5px;
+    padding: 5px;
+    background: white;
+    margin-bottom: 10px;
+}
+
+div .info-box h3{
+    padding-top: 10px;
+}
+
+div .info-box p{
+    padding-bottom: 10px;
+}
+
+div .ending{
+    margin: 30px 0;
+    padding: 20px;
+}
+
+
+/* Footer */
 
 footer {
     width: 100%;
